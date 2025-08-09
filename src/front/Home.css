@@ -1,0 +1,38 @@
+body{
+    background: url("../../public/1.webp");
+    margin: 0;
+    padding: auto;
+}
+.wall{
+    text-align: left;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 40%;
+    
+    
+}
+.wall h1{
+    color: rgb(168, 214, 168);
+    font-size: 50px;
+    text-shadow: 2px 2px 5px wheat;
+    margin-left: 20px;
+}
+.wall p{
+    opacity: 0.9;
+   margin-left:20px ;
+   color: wheat;
+ 
+}
+.wall p:hover{
+    background-color: rgba(46, 42, 42, 0.372);
+    border-radius: 20px;
+    opacity: 1.2;
+    scale: 1.1;
+}
+.wall button{
+    padding: 10px;
+    background-color:  rgb(168, 214, 168);
+    border-radius: 30px;
+    margin-left: 80px;
+}
