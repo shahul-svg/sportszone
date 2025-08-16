@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  background: black;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  text-align: center;
+
+ 
+  animation: about3D 1s ease-out forwards;
+  transform-origin: center;
+  opacity: 0;
+}
+
+
+.container h2 {
+  font-size: 28px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.container h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 25px;
+}
+
+.container p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.container strong {
+  color: #222;
+}
+
+
+.container ul {
+  display: inline-block;
+  text-align: left;
+  margin: 10px auto 20px auto;
+  padding-left: 20px;
+}
+
+.container li {
+  margin-bottom: 8px;
+  color: #444;
+  list-style-type: disc;
+}
+
+
+@keyframes about3D {
+  0% {
+    transform: perspective(800px) rotateX(-20deg) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: perspective(800px) rotateX(10deg) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(800px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .container h3 {
+    font-size: 18px;
+  }
+}

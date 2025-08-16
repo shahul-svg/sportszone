@@ -1,0 +1,123 @@
+.navbar {
+    width: 100%;
+    height: 40px;
+    background: #0b3d0b; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar img.cart {
+    height: 35px;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a,
+.navbar-menu .active {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #f0c929; 
+}
+
+.navbar-menu .active {
+    border-bottom: 2px solid #f0c929;
+    padding-bottom: 3px;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.navbar-search-icon {
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar-search-icon img {
+    height: 28px;
+    width: 28px;
+}
+
+
+.navbar-search-icon .dot {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    height: 8px;
+    width: 8px;
+    background: #f0c929;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.navbar-right button {
+    background: #f0c929;
+    color: #0b3d0b;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-right button:hover {
+    background: #ffdb4d;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-right button {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .navbar-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-right {
+        margin-top: 0.5rem;
+    }
+}

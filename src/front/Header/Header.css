@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    height: 90vh; 
+    margin: auto;
+    background: url("../../../public/1.webp") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 7%;
+    left: 22vw;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 1; 
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 20px);
+    margin: 0;
+    
+}
+
+.header-contents p {
+    color: #f1f1f1;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 80%;
+    }
+    .header-contents p {
+        display: none;
+    }
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,33 +1,36 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './front/Home';
-import About from './front/About';
-import Products from './front/Products';
-import Contact from './front/Contact';
-import Login from './front/Login';
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <nav style={{ display: 'flex', gap: '50px', background: 'black', padding: '20px', justifyContent: 'center' }}>
-          <Link to='/'>Home</Link>
-          <Link to='/About'>About</Link>
-           <Link to='/Products'>products</Link>
-          <Link to='/Contact'>Contact</Link>
-          <Link to='/Login'>login</Link>
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/About" element={<About />}></Route>
-          <Route path="/products" element={<Products />}></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
-          <Route path="/Login" element={<Login />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-}
+import Login from './front/Login/Login';
+import Navbar from './front/Navbar/Navbar';
+import Cart from './pages/Cart/Cart';
+import Placeorder from './pages/placeorder/Placeorder';
+
+import Home from './pages/home/Home';
+import Footer from '../src/front/Footer/Footer'
+
+function App() {
+  const [showLogin, setShowLogin] = useState(false);
+
+  return (
+   <>
+        {showLogin ? <Login setShowLogin={setShowLogin} />:<></>}
+
+        <div className="app">
+          <Navbar setShowLogin={setShowLogin} />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/order" element={<Placeorder />} />
+          </Routes>
+        </div>
+        <Footer/>
+</>
+        
+      
+  )
+};
 
 export default App;

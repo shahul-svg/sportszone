@@ -1,0 +1,149 @@
+.cart {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-items {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 100px 100px 60px;
+  align-items: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.cart-items-item {
+  font-weight: normal;
+}
+
+.cart-items img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-items p {
+  margin: 0;
+  color: #333;
+}
+
+.cross {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.cross:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.empty-cart {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.cart-bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-total {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total h2 {
+  margin-bottom: 15px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-total button:hover {
+  background-color: #e65500;
+}
+
+.cart-promocode {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-promocode-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-promocode-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.cart-promocode-input input:focus {
+  border-color: #ff6600;
+}
+
+.cart-promocode-input button {
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-promocode-input button:hover {
+  background-color: #222;
+}
+
+@media (max-width: 768px) {
+  .cart-items-title {
+    grid-template-columns: 60px 1fr 80px 80px 80px 40px;
+    font-size: 14px;
+  }
+
+  .cart-bottom {
+    flex-direction: column;
+  }
+}
