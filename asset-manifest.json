@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/sportzone/static/css/main.d6ec3371.css",
+    "main.js": "/sportzone/static/js/main.e8d97976.js",
+    "static/media/20.png": "/sportzone/static/media/20.ec49f949c23a83faecaa.png",
+    "static/media/2.jpg": "/sportzone/static/media/2.f1ef0c1e434f73f8efed.jpg",
+    "static/media/25.webp": "/sportzone/static/media/25.de6df709776220b1e424.webp",
+    "static/media/7.jpg": "/sportzone/static/media/7.3265050c9c056b7f5970.jpg",
+    "static/media/1.webp": "/sportzone/static/media/1.aada1a9a05fb4c34558d.webp",
+    "static/media/30.jpg": "/sportzone/static/media/30.cff89925e95bf91805e9.jpg",
+    "static/media/28.jpg": "/sportzone/static/media/28.9b6cf0ac43423b36fd2f.jpg",
+    "static/media/15.webp": "/sportzone/static/media/15.dda9cda5c94440a00db0.webp",
+    "static/media/26.jpg": "/sportzone/static/media/26.1201ee32e473cdd46582.jpg",
+    "static/media/3.jpg": "/sportzone/static/media/3.ed1901ca2bfc017cbb81.jpg",
+    "static/media/17.jpg": "/sportzone/static/media/17.a76d43fbb6443ff92d0d.jpg",
+    "static/media/12.webp": "/sportzone/static/media/12.b940e0832de03a3d14be.webp",
+    "static/media/4.webp": "/sportzone/static/media/4.c3bfd40a1922f58939dd.webp",
+    "static/media/35.jpg": "/sportzone/static/media/35.d77b9b0bc16a2576baed.jpg",
+    "static/media/add_logo.png": "/sportzone/static/media/add_logo.859715ed0c5f4415d136.png",
+    "static/media/16.webp": "/sportzone/static/media/16.81934bc4143d03a0706f.webp",
+    "static/media/9.webp": "/sportzone/static/media/9.ea53b6cf7340dfd50e66.webp",
+    "static/media/21.jpeg": "/sportzone/static/media/21.bee8d475f00585e50f46.jpeg",
+    "static/media/b8.jpg": "/sportzone/static/media/b8.97793ff334c6c236c67a.jpg",
+    "static/media/33.jpg": "/sportzone/static/media/33.1e82acc8133d18f5ab7c.jpg",
+    "static/media/22.jpeg": "/sportzone/static/media/22.6ed0b472404dafc5937d.jpeg",
+    "static/media/23.jpeg": "/sportzone/static/media/23.2927b64af072f0084542.jpeg",
+    "static/media/b19.jpg": "/sportzone/static/media/b19.896ad2bafe3d2a1eec96.jpg",
+    "index.html": "/sportzone/index.html",
+    "main.d6ec3371.css.map": "/sportzone/static/css/main.d6ec3371.css.map",
+    "main.e8d97976.js.map": "/sportzone/static/js/main.e8d97976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6ec3371.css",
+    "static/js/main.e8d97976.js"
+  ]
+}
