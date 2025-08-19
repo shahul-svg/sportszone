@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import {Routes, Route } from 'react-router-dom';
 import Login from './front/Login/Login';
 import Navbar from './front/Navbar/Navbar';
 import Cart from './pages/Cart/Cart';
