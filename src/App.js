@@ -5,6 +5,8 @@ import Login from './front/Login/Login';
 import Navbar from './front/Navbar/Navbar';
 import Cart from './pages/Cart/Cart';
 import Placeorder from './pages/placeorder/Placeorder';
+import { BrowserRouter } from "react-router-dom";
+
 
 import Home from './pages/home/Home';
 import Footer from '../src/front/Footer/Footer'

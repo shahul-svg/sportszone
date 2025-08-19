@@ -3,6 +3,8 @@ import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom'
 import { StoreContext } from '../../context/Context'
 import { img } from '../../assest/Assest'
+import { BrowserRouter } from "react-router-dom";
+
 
 function Navbar({ setShowLogin }) {
   const { getTotalCartAmount } = useContext(StoreContext)
